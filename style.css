@@ -10,7 +10,7 @@ body {
 
 .container-layout{
     max-width: 1440px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -370,6 +370,7 @@ body {
     margin: auto;
     align-items: flex-start;
     justify-content: center;
+    padding: 30px 0px;
 }
 .ftr-logo-cont, .links, .locate, .cont{
     width:25%;
@@ -391,6 +392,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
+    margin: 0;
 
 }
 .links p, .locate p, .cont p{
@@ -398,9 +400,47 @@ body {
     font-size: 14px;
     font-weight: 400;
     color: #fff;
+    
 }
 
+.cont h4{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff; 
+    margin: 0;
+    
+}
+.subftr{
+    background-color: #000;
+    
+}
+.cred .container-layout{
+    border-top: 2px solid #00646f;
+    display: flex;
+    justify-content: center;
+}
+.cred p{
+    font-family: 'poppins';
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+}
+.cont a {
+    color: #dfdfdf;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+.cont a:hover{
+    color:#ffd700;
+    text-decoration: none;
+}
 
+.email, .mob {
+    margin: 10px 0;
+}
 /* Responsive for Mobile */
 @media (max-width: 768px) {
   .nav-links {
