@@ -206,6 +206,7 @@ body {
     font-weight: 700;
     color: #ffd700;
     margin: 0px;
+    margin-bottom: 10px;
 }
 
 .counter-section {
@@ -398,6 +399,7 @@ body {
 
 .gallery-img:hover {
     transform: scale(1.05);
+    transition: 2s ease;
 }
 
 /* Lightbox styles */
