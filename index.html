@@ -22,9 +22,9 @@
             <nav class="navbar" id="navbar">
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Institutions</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#insti">Institutions</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <div class="menu-toggle" id="menu-toggle">&#9776;</div>
@@ -68,7 +68,7 @@
     </section>
 
     <!-- about us sections -->
-    <section class="about-sec">
+    <section class="about-sec" id="about">
         <div class="about-container">
             <div class="container-layout">
                 <div class="about-info">
@@ -99,6 +99,8 @@
                     <p>To provide high-quality, inclusive academic environment for honing innate talents and enhancing
                         potential through value-based education to transform students into global citizens.</p>
                 </div>
+
+
                 <div class="vision-card">
                     <h2>Mission</h2>
                     <p>To provide opportunities for holistic learning experiences to every student to become a lifelong
@@ -183,7 +185,7 @@
     </section>
 
     <!-- our institution -->
-    <section class="institute-sec">
+    <section class="institute-sec" id="insti">
         <h2 class="inst-sec-title">Our Institutions</h2>
         <div class="container-layout">
 
@@ -209,7 +211,7 @@
     </section>
 
     <!-- gallery section -->
-    <section class="gallery-section">
+    <section class="gallery-section" id="gallery">
         <div class="container-layout">
             <div class="gal">
                 <h2>Our Gallery</h2>
@@ -251,7 +253,7 @@
                     <p>Institute</p>
                     <p>Contact us</p>
                 </div>
-                
+
                 <div class="cont">
                     <h3>Contact us</h3>
                     <div class="email">
@@ -287,15 +289,24 @@
     <script>
         const swiper = new Swiper('.swiper', {
             loop: true,
-            // autoplay: {
-            //     delay: 2000,
-            //     disableOnInteraction: true,
-            // },
+            speed: 1000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
 
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+        });
+
+        const swiperEl = document.querySelector('.swiper');
+        swiperEl.addEventListener('mouseenter', () => {
+            swiper.autoplay.stop();
+        });
+        swiperEl.addEventListener('mouseleave', () => {
+            swiper.autoplay.start();
         });
 
     </script>
